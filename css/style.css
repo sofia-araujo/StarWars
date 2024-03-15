@@ -1,0 +1,129 @@
+:root{
+    --black-700: #1d1f23;
+    --gray-700: #123a35;
+    --cor-3: #2d4a53;
+    --cor-4: #69818d;
+    --cor-5: #afb3b7;
+    --cor-6: #5a636a;
+    --white: #FFF;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-color: var(--black-700);
+    font-size: 16px;
+}
+.container{
+    max-width: 1200px;
+    border: 1px solid var(--white);
+    margin: auto;
+
+}
+
+.navbar{
+    display: flex;
+    padding: 0.1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand{
+    padding: 8px 0px;
+}
+.navbar-brand img{
+    width: 70px;
+}
+
+.personagem-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.personagem .personagem-caixa{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+
+}
+.personagem .personagem-caixa img{
+    height: 350px;
+    width: 350px;
+   
+}
+.personagem .personagem-caixa div{
+    padding: 1rem 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--gray-700);
+    color: var(--white);
+    position: absolute;
+}
+
+.personagem-dado {
+    color: #fff;
+    text-align: center;
+}
+
+.personagem-dado span {
+    display: block;
+    padding-top: 10px;
+}
+
+.name {
+    background-color: var(--gray-700);
+    padding: 16px 8px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+.form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 400px;
+    height: 300px;
+    padding: 20px 40px;
+    gap: 6px;
+    border-radius: 6px;
+}
+.form-login h1 {
+    padding-bottom: 16px;
+}
+.form-login input {
+    border-radius: 6px;
+    border: 1px solid var(--cor-3);
+    padding: 6px;
+}
+.form-login .btn {
+    cursor: pointer;
+    margin-top: 16px;
+    align-self: center;
+    padding: 8px 16px;
+    width: 100px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: var(--gray-700);
+    color: var(--white);
+}
+
+.form-login .btn:hover {
+    background-color: var(--cor-3);
+}
